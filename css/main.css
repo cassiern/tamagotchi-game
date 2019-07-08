@@ -28,6 +28,12 @@ h4 {
 	font-family: 'Sniglet', cursive;
 	text-align: center;
 }
+
+#special {
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+}
 #secondHeader {
 	background-color:#b5b7ba;
 	opacity: .9;
