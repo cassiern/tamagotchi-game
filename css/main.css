@@ -99,9 +99,9 @@ background-size: cover;
 	transform: rotateZ(360deg);
 }
 
-@keyframes lastNinja {
-	from{ transform: translateX(0px)}
-	to{ transform: translateX(500px)}
+@keyframes firstNinja {
+	from{ transform: translateX(800px)}
+	to{ transform: translateX(0px)}
 }
 
 @media screen and (max-width: 1000px){
