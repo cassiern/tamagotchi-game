@@ -100,12 +100,12 @@ background-size: cover;
 
 @media screen and (max-width: 1000px){
 	#mrNinja {
-		alignment-baseline: bottom;
+		top: 700px;
 	}
 }
 @media screen and (min-width: 850){
 	#mrNinja {
-		alignment-baseline: bottom;
+		top: 200px;
 	}
 }
 

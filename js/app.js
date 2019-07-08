@@ -10,7 +10,6 @@ class Tamagotchi {
 
 	}
 };
-//FIGURE OUT CLASS
 //starting game
 let hungry = 0;
 let bored = 0;
