@@ -1,0 +1,115 @@
+
+header {
+	background-color: #f73434;
+	text-align: center;
+	font-family: 'Sniglet', cursive;
+	opacity: .9;
+}
+
+body, 
+html {
+	min-height: 100%;
+}
+body {
+	background-image: url(https://static.comicvine.com/uploads/original/11126/111267028/5022232-0153700081-52d4d9.jpeg);
+	color: white;
+	text-align: center;
+	margin: 5px;
+	background-repeat: no-repeat;
+}
+
+
+input {
+	border-radius: 12px;
+	text-align: center;
+}
+
+h4 {
+	font-family: 'Sniglet', cursive;
+	text-align: center;
+}
+#secondHeader {
+	background-color:#b5b7ba;
+	opacity: .9;
+	padding: 10px;
+
+}
+
+.button {
+	border-radius: 12px;
+	text-align: center;
+}
+
+#start {
+	background-color: #49bf57;
+	border-radius: 12px;
+	margin: 5px;
+	text-align: center;
+	width: 50px;
+    height: 20px;
+
+}
+#start:hover {
+	background-color: #0c852a;
+}
+
+#trainingRoom {
+background-repeat: no-repeat;
+height: 100%;
+width: 100%;
+overflow: hidden;
+background-size: auto;
+background-size: cover; 
+}
+
+
+ #mrNinja {
+	width: 20%;
+	position: absolute;
+	left: 45%;
+	display: block;
+	max-width: 100%;
+	height: auto;
+    width: auto/9;
+    transition: transform .5s ease-in;
+    animation-name: firstNinja;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+
+}
+
+.wrapper {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.button:hover {
+	background-color: #467fdb;
+}
+
+#mrNinja:hover {
+	transform: rotateZ(360deg);
+}
+
+@keyframes lastNinja {
+	from{ transform: translateX(0px)}
+	to{ transform: translateX(500px)}
+}
+
+@media screen and (max-width: 1000px){
+	#mrNinja {
+		alignment-baseline: bottom;
+	}
+}
+@media screen and (min-width: 850){
+	#mrNinja {
+		alignment-baseline: bottom;
+	}
+}
+
+
+
+
+
