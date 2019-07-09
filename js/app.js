@@ -24,7 +24,8 @@ let timer;
 let seconds = 0;
 let aging = 1;
 let timeIsRunning = false;
-$('#start').click(function(){
+let gameOn = true;
+$('#start').click(function startGame(){
 	$('#mrNinja').attr("src", "https://png2.kisspng.com/sh/707a6aa33beb4abf2d64f49d2f223068/L0KzQYm3VsE1N5tmjZH0aYP2gLBuTf5qdptmRdN3aX3khLbrTfZqdJ4ykdHAdIXldX7qjPlxNZJ3jJ8AYkK1SLS7WMIzOGE7SZCCMEm6SYS3WcE2OmkAUaICOUK0Q4q6TwBvbz==/kisspng-ninja-animated-film-youtube-clip-art-5b228c48220061.7097930915289907921393.png");
 	if(!timeIsRunning){
 		timeIsRunning = true;
@@ -52,32 +53,33 @@ $('#start').click(function(){
 		} 
 
 			didYouDie()
+			
 		}, 1000)
 	} 	
 });
 function didYouDie() {
 			if(hangry === 10){
-				
 				alert("Sorry, the Tamagotchi got too hungry.");
 				clearInterval(timer);
 				$('#mrNinja').attr("src", "https://ui-ex.com/images/ninja-transparent-cartoon-3.gif");
-			
+				
 			}else if(tamaIsBored === 10){
 				$('#mrNinja').attr("src", "https://ui-ex.com/images/ninja-transparent-cartoon-3.gif");
 				alert("Sorry, the Tamagotchi needed more training.");		
 				clearInterval(timer);
-			
+				
 			} else if(aging === 10){
 				$('#mrNinja').attr("src", "https://ui-ex.com/images/ninja-transparent-cartoon-3.gif");
 				alert("The Tamagotchi is all grown.");
 				clearInterval(timer);
-			
-			} else if(tamaIsBored === 10){
+				
+			} else if(soTired === 10){
 				$('#mrNinja').attr("src", "https://ui-ex.com/images/ninja-transparent-cartoon-3.gif");
 				alert("Sorry, the Tamagotchi didn't get enough sleep.");
 				clearInterval(timer)
-			}
-	}
+				
+			} 
+    }
 
 
 //decreasing food/sleep/boredom count
@@ -91,8 +93,6 @@ function didYouDie() {
 	$('#nap').click(function(){
 	soTired -= 1;
 });
-
-
 
 
 //submit name and hide input
@@ -114,4 +114,32 @@ function renderName(){
 function onClickClose(){
 	$('#submit-name').hide();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
